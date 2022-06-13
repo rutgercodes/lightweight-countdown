@@ -33,7 +33,6 @@ class LWCD_Shortcodes {
 
 	/**
 	 * Register scripts needed by the shortcodes
-	 *
 	 */
 	protected static function register_scripts() {
 
@@ -78,7 +77,7 @@ class LWCD_Shortcodes {
 				'id' => $timer_id,
 				'deadline' => $deadline_date_time->getTimestamp(),
 				'format' => $format,
-				'units' => $units, // pass only values to make it an array in js
+				'units' => $units, // pass only values to parse as array in js
 				'locale' => explode( "_", get_locale() )[0]
 			) ) . ';
 			if(typeof LWCD_TIMERS !== "undefined") {
@@ -90,7 +89,7 @@ class LWCD_Shortcodes {
 
 		foreach( $units as $key => $unit ) {
 
-			// Calculate the number of time units left 
+			// Calculate the number of time units left
 			$units_left = 0;
 			if( $time_left > $unit['duration'] ) {
 				if( $format !== 'single' || ( !$output && $format === 'single' ) ) {

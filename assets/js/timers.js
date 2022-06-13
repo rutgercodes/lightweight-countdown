@@ -17,9 +17,11 @@ var lwcd_timers = {
 		// Set the text and set an interval based on the smallest visible time unit
 		lwcd_timers.setTimerText( timer.id, timer );
 
+		// Check if deadline is in future
 		const now = new Date().getTime()
-		if( timer.deadline - Math.round(now/1000) <= 0 ) return false;
+		if( timer.deadline - (now/1000) <= 0 ) return false;
 
+		// Set the interval and return to be able to stop
 		return setInterval( () => {
 			lwcd_timers.setTimerText( timer.id, timer );
 		}, timer.units.seconds ? 1000 : ( timer.units.minutes ? 3000 : 15000 ) )
@@ -37,10 +39,12 @@ var lwcd_timers = {
 
 		let unitsArray = Object.values( timer.units );
 
+		// If no time left, only run for smallest visible unit
 		if( timeLeft <= 0 ) {
 			unitsArray = unitsArray.slice(-1);
 		}
 
+		// Build the output string
 		var string = '';
 		unitsArray.forEach( (unit) => {
 			// Calculate the number of time units & total time left 
