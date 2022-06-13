@@ -17,22 +17,7 @@ class LWCD_AJAX {
 	 * Hook in ajax handlers.
 	 */
 	public static function init() {
-		add_action( 'init', array( __CLASS__, 'define_ajax' ), 0 );
 		self::add_ajax_events();
-	}
-
-	/**
-	 * Set LWCD AJAX constant and headers.
-	 */
-	public static function define_ajax() {
-		// phpcs:disable
-		if ( ! empty( $_GET['lwcd-ajax'] ) ) {
-			if ( ! WP_DEBUG || ( WP_DEBUG && ! WP_DEBUG_DISPLAY ) ) {
-				@ini_set( 'display_errors', 0 ); // Turn off display_errors during AJAX events to prevent malformed JSON.
-			}
-			$GLOBALS['wpdb']->hide_errors();
-		}
-		// phpcs:enable
 	}
 
 	/**
