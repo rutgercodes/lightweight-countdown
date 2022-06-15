@@ -13,14 +13,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="panel-wrap lwcd_submit_timer">
 
-	<pre>
-	<?php 
-
-		print_r( get_plugins() );
-
-	?>
-	</pre>
-
 	<p><?php esc_html_e( 'Use the shortcodes below to display the timer or conditional content based on the timers deadline.', 'lightweight-countdown' ); ?></p>
 
 	<h4><?php esc_html_e( 'Countdown timer text', 'lightweight-countdown' ); ?></h4>

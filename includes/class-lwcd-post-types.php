@@ -5,7 +5,7 @@
  * Registers post types and taxonomies.
  *
  * @package Lightweight Countdowns\Classes\Timers
- * @version 2.5.0
+ * @version 1.0.0
  */
 
 defined( 'ABSPATH' ) || exit;
