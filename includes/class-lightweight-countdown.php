@@ -1,20 +1,9 @@
 <?php
 /**
- * Plugin Name: Lightweight Countdowns
- * Description: Add lightweight countdowns anywhere weasily with shortcodes
- * Author: Rutger van Wijngaarden
- * Version: 1.0.0
- * Text Domain: lightweight-countdowns
+ * Lightweight Countdowns setup
  *
- * Copyright: (c) 2022 Rutger van Wijngaarden (wordpess@rutger.codes)
- *
- * License: GNU General Public License v3.0
- * License URI: http://www.gnu.org/licenses/gpl-3.0.html
- *
- * @author    Rutger van Wijngaarden
- * @copyright Copyright (c) 2022, Rutger van Wijngaarden
- * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
- *
+ * @package Lightweight Countdowns
+ * @version 1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly

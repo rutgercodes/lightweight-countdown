@@ -3,7 +3,7 @@
  * Lightweight Countdown Admin Functions
  *
  * @package  Lightweight_Countdown\Admin\Functions
- * @version  2.4.0
+ * @version  1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

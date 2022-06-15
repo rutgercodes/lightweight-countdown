@@ -5,7 +5,7 @@
  * Displays the product data box, tabbed, with several panels covering price, stock etc.
  *
  * @package  Lightweight Countdowns\Admin\Meta Boxes
- * @version  3.0.0
+ * @version  1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

@@ -4,7 +4,7 @@
  *
  * @class    LWCD_Admin
  * @package  Lightweight Countdowns\Admin
- * @version  2.6.0
+ * @version  1.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
